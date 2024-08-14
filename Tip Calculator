@@ -1,0 +1,9 @@
+print("Welcome to the tip calculator!")
+# Get data inputs
+bill = input("What was the total bill? $ ")
+tip = input("How much of a % tip would you like to give? 10, 12, or 15? ")
+people = input("How many people to split the bill? ")
+
+# Display final payment
+print("Each person should pay: $", float(bill) * (1 + float(tip)/100) / int(people))
+#float tells Python it is not a string as  you cannot divide a string by an integer.
